@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Derek's coding portfolio</title>
-  </head>
-  <body
-    <div>
-        <p>LOGO</p>
-    </div>
-    <div>
-        <p> </p>
-        <p>Java Showcase</p>
-    </div>
-    <p>welcome to my portfolio</p>
-    <p>soon you will be able to see lots of cool java applets!</p>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Derek's coding portfolio</title>
+        <link rel="stylesheet" href="main.css">
+        <script>
+            function dropTopnav() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " topnav--dropped";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script> 
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="topnav__logo">
+                <img src="data/blanken-seal-logo.png" alt="logo">
+            </a>
+            <a href="javascript:void(0);" class="topnav__icon" onclick="dropTopnav()">&#9776;</a>
+            <a href="#java" class="topnav__elem">Java Showcase</a>
+            <a href="#c++" class="topnav__elem">C++ Showcase</a>
+            <a href="#cv" class="topnav__elem">Resume</a>
+            <a href="#contact" class="topnav__elem">Contact</a>
+        </div>
+        <div class="content">
+            <p>welcome to my portfolio</p>
+            <p>soon you will be able to see lots of cool java applets!</p>
+        </div>
+        
+        
+    </body>
 </html>
