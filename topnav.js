@@ -1,5 +1,3 @@
-
-
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function dropTopnav() {
     var x = document.getElementById("js-topnav");
@@ -10,3 +8,4 @@ function dropTopnav() {
         x.className = "topnav";
     }
 }
+
