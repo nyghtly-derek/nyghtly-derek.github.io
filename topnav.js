@@ -1,11 +1,30 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
+
+var topnav = document.getElementById("js-topnav");
+var topnavBackground = document.getElementById("js-topnav__background");
+var sticky = topnav.offsetTop + 38;
+
+window.onscroll = function() {makeStickyTopnav()};
+
 function dropTopnav() {
-    var x = document.getElementById("js-topnav");
-    if (x.className === "topnav") {
-        x.className += " topnav--dropped";
+    if (!topnav.classList.contains("topnav--dropped")) {
+        topnav.classList.add("topnav--dropped");
     } 
     else {
-        x.className = "topnav";
+        topnav.classList.remove("topnav--dropped");
     }
 }
+
+
+
+function makeStickyTopnav() {
+    if (window.pageYOffset >= sticky) {
+        topnav.classList.add("topnav--sticky")
+        topnavBackground.classList.add("topnav__background--sticky");
+    } 
+    else {
+        topnav.classList.remove("topnav--sticky");
+        topnavBackground.classList.remove("topnav__background--sticky");
+    }
+} 
 
