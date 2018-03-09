@@ -73,7 +73,7 @@ body
 
 }
 
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 799px) 
 {   
     .topnav__elem
 	{
@@ -82,7 +82,7 @@ body
 	
 	.topnav__icon
 	{
-        font-size: 28px;
+        font-size: 20px;
 		display:inline-block;
 	}
 	
@@ -94,43 +94,83 @@ body
         padding-left:40px;
 	}
     
-    .topnav--dropped .topnav__background
+    .topnav__background--dropped
     {
         height:352px;
     }
+
 }
 
-
-/* activated by makeStickyTopnav in topnav.js */
-.topnav--sticky {
+.topnav--sticky
+{
     position: fixed;
     top:-38px;
     width:100%;
     left:0px;
+    z-index: 300;
 }
 
-.topnav__background--sticky {
+.topnav__background--sticky 
+{
     position: fixed;
     top:-38px;
+    z-index: 200;
 }
+
 
 /******** Content ********/
 
 .content 
 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    max-width: 550px;
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 650px;
 }
 
-/******** universal classes ********/
-
-.div-center
+.content--scrolled 
 {
-    margin: auto;
-    width: 70%;
-    padding: 10px;
+    padding-top:175px;
+}
+
+.content-box {
+    padding: 8px;
+    max-width: 300px;
+    height: auto;
+    position: relative;
+}
+
+.content-box__image {
+    opacity: 1;
+    transition: .5s ease;
+    width: 100%;
+    height: auto;
+}
+
+.content-box__image:hover {
+    opacity:.45;
+}
+
+.content-box__middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+.content-box:hover .content-box__middle {
+    opacity:1;
+}
+
+.content-box__middle__text {
+  background-color: #4CAF50;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 
