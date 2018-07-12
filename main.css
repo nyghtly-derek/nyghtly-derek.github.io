@@ -1,177 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
+
+:root {
+    /** colors **/
+    --background: #F9F5EF;
+    --nav-bg: #004A61;
+    --text: #100A0B;
+    --highlight: #D22315;
+    --nav-bg-light: #7FC9E0;
+    
+    /** fonts **/
+    --font-title: 'Merriweather', serif;
+    --font-body: 'Inconsolata', monospace;
+    
+    /** transitions **/
+    --transition-speed: .6s;
+    --transition-delay: .25s;
+    
+}
+
+
 /******* General *******/
 
-#all 
-{
-  background-color: grey;
+html {
+    background-color: var(--nav-bg-light);
 }
 
-body
-{
+/******* Header *******/
+    
+header {
+}
+
+header h1 {
     text-align: center;
+    font-size: 60px;
+    font-family: var(--font-title);
+    
+    /** position **/
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/******* Top Navigation *******/
-
-.topnav
-{
-	overflow:hidden;
+header p {
+    font-size: 40px;  
+    font-family: var(--font-body);
+    max-width: 600px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-.topnav__background
-{
-    width:100%;
-    height:100px;
-    position:absolute;
-    left:0;
-    margin-top:38px;
-    background-color:grey;
-    z-index:-1;
-}
-
-.topnav .topnav__elem:hover
-{
-    background-color:white;
-}
-
-.topnav .topnav__icon:hover
-{
-    color:white;
-}
-
-.topnav a 
-{
-    margin:auto;
-    color:#000;
-    padding:14px 16px;
-    text-decoration: none;
-    text-align:center;
-    font-family:sans-serif;
-	font-weight:700;
-    vertical-align:middle;
-}
-
-.topnav__elem
-{
-    font-size:20px;
-    display:inline-block;
-}
-
-.topnav__icon
-{
-    margin-left:auto;
-	margin-right:auto;
-	display:none;
-}
-
-.topnav__logo
-{
-    margin-left:auto;
-	margin-right:auto;
-	padding-left:10px;
-	padding-right:10px;
-    display:inline-block;
-
-}
-
-@media screen and (max-width: 799px) 
-{   
-    .topnav__elem
-	{
-		display:none;
-	}
-	
-	.topnav__icon
-	{
+@media screen and (max-width: 600px) {
+    header p {
+        text-align: justify;
         font-size: 20px;
-		display:inline-block;
-	}
-	
-    /* added when user clicks on icon via dropTopnav function in script.js */
-	.topnav--dropped .topnav__elem
-	{
-		display:block;
-		text-align:left;
-        padding-left:40px;
+    }
+}
+
+/******* Top Nav *******/
+
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav-bg);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.topnav li {
+    float: left;
+    border: 4px solid var(--nav-bg);
+}
+
+.topnav li a {
+    /** transition **/
+    transition: var(--transition-speed);
+    transition-delay: var(--transtion-delay);
+    
+    display: block;
+    color: var(--background);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:var(--font-title);
+	font-weight:600;
+    border: 4px solid var(--nav-bg);
+    border-radius: 10px;
+}
+
+.topnav li a:hover {
+    /** transition **/
+    transition: var(--transition-speed);
+    transition-delay: var(--transtion-delay);
+    
+    border-radius: 25px;
+    font-weight: bold;
+    border: 4px solid var(--nav-bg);
+    color: var(--nav-bg);
+    background-color: var(--background);
+}
+
+.topnav #icon {
+    display: none;
+}
+
+.topnav .active a {
+    background-color: var(--background);
+    color: var(--nav-bg);
+    border-radius: 25px;
+}
+
+/** responsive styling for phones **/
+
+@media screen and (max-width: 600px) {   
+    .topnav li {
+        float: none;
+        display: none;
+        border: 0px;
 	}
     
-    .topnav__background--dropped
-    {
-        height:352px;
+	.topnav #icon {    
+        display: block;
+	}
+    
+    .topnav li a {
+        border: 0px;
     }
+    
+    .topnav li a:hover {
+        border-radius: 0px;
+        border: none;
+    }
+    
+    .topnav #icon a:hover {
+        transition: none;
+        color: var(--background);
+        background-color: var(--nav-bg);
+    }
+    
+    .topnav .active a {
+        background-color: var(--background);
+        color: var(--nav-bg);
+        border-radius: 0px;
+    }
+	
+    /* added when user clicks on icon via dropTopnav function in script.js */
+	.topnav--dropped li {
+        display: block;
+	}
 
 }
 
-.topnav--sticky
-{
-    position: fixed;
-    top:-38px;
-    width:100%;
-    left:0px;
-    z-index: 300;
-}
 
-.topnav__background--sticky 
-{
-    position: fixed;
-    top:-38px;
-    z-index: 200;
-}
+/******** Main ********/
 
-
-/******** Content ********/
-
-.content 
-{
+main {
     display:flex;
     flex-wrap: wrap;
-    margin: auto;
-    max-width: 650px;
+    max-width: 100%;
 }
 
-.content--scrolled 
-{
-    padding-top:175px;
-}
-
-.content-box {
-    padding: 8px;
+main a {
     max-width: 300px;
+    margin: auto;
     height: auto;
     position: relative;
 }
 
-.content-box__image {
+main a img {
     opacity: 1;
-    transition: .5s ease;
     width: 100%;
-    height: auto;
+    
+    /** transition **/
+    transition: var(--transition-speed);
+    transition-delay: var(--transtion-delay);
 }
 
-.content-box__image:hover {
+main a:hover img {
     opacity:.45;
+    
+    /** transition **/
+    transition: var(--transition-speed);
+    transition-delay: var(--transtion-delay);
 }
 
-.content-box__middle {
-    transition: .5s ease;
-    opacity: 0;
+main a .label {
+    /* position */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    
+    /* appearance */
+    background-color: var(--nav-bg);
+    color: var(--background);
+    font-family: var(--font-body);
+    font-size: 16px;
+    padding: 6px 10px;
+    
+    /** transition **/
+    transition: var(--transition-speed);
+    transition-delay: var(--transtion-delay);
+    
+    opacity: 0;
 }
 
-
-.content-box:hover .content-box__middle {
+main a:hover .label {
+    /** transition **/
+    transition: var(--transition-speed);
+    transition-delay: var(--transtion-delay);
+    
     opacity:1;
 }
 
-.content-box__middle__text {
-  background-color: #4CAF50;
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
-}
 
 
 
