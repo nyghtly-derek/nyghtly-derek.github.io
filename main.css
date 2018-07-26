@@ -11,6 +11,7 @@
     /** fonts **/
     --font-title: 'Merriweather', serif;
     --font-body: 'Inconsolata', monospace;
+    --font-preview: 'Inconsolata', monospace;
     
     /** transitions **/
     --transition-speed: .6s;
@@ -28,17 +29,17 @@ html {
 /******* Header *******/
     
 header {
+    height: 100vh;
+    min-height: 800px;
+    max-width: 600px;
+    margin: auto;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 60px;
+    text-align: left;
+    font-size: 80px;
     font-family: var(--font-title);
     
-    /** position **/
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 header p {
@@ -46,12 +47,39 @@ header p {
     font-family: var(--font-body);
     max-width: 600px;
     text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    header {
+        min-height: 600px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    header h1 {
+        font-size: 60px;
+    }
+    
+    header p {
+        text-align: justify;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        min-height: 400px;
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    header h1 {
+        font-size: 40px;
+    }
+    
     header p {
         text-align: justify;
         font-size: 20px;
@@ -83,7 +111,7 @@ header p {
     transition-delay: var(--transtion-delay);
     
     display: block;
-    color: var(--background);
+    color: var(--nav-bg-light);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -102,7 +130,7 @@ header p {
     font-weight: bold;
     border: 4px solid var(--nav-bg);
     color: var(--nav-bg);
-    background-color: var(--background);
+    background-color: var(--nav-bg-light);
 }
 
 .topnav #icon {
@@ -110,7 +138,7 @@ header p {
 }
 
 .topnav .active a {
-    background-color: var(--background);
+    background-color: var(--nav-bg-light);
     color: var(--nav-bg);
     border-radius: 25px;
 }
@@ -139,12 +167,12 @@ header p {
     
     .topnav #icon a:hover {
         transition: none;
-        color: var(--background);
+        color: var(--nav-bg-light);
         background-color: var(--nav-bg);
     }
     
     .topnav .active a {
-        background-color: var(--background);
+        background-color: var(--nav-bg-light);
         color: var(--nav-bg);
         border-radius: 0px;
     }
@@ -173,7 +201,7 @@ main a {
 }
 
 main a img {
-    opacity: 1;
+    opacity: .45;
     width: 100%;
     
     /** transition **/
@@ -182,7 +210,7 @@ main a img {
 }
 
 main a:hover img {
-    opacity:.45;
+    opacity:1;
     
     /** transition **/
     transition: var(--transition-speed);
@@ -200,7 +228,7 @@ main a .label {
     /* appearance */
     background-color: var(--nav-bg);
     color: var(--background);
-    font-family: var(--font-body);
+    font-family: var(--font-preview);
     font-size: 16px;
     padding: 6px 10px;
     
