@@ -12,8 +12,4 @@ function dropTopnav() {
     }
 }
 
-function pullOutNavElem() {
-    // TODO: animate elems on hover
-}
-
 

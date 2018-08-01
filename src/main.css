@@ -1,29 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
-
-:root {
-    /** colors **/
-    --background: #F9F5EF;
-    --nav-bg: #004A61;
-    --text: #100A0B;
-    --highlight: #D22315;
-    --nav-bg-light: #7FC9E0;
-    
-    /** fonts **/
-    --font-title: 'Merriweather', serif;
-    --font-body: 'Inconsolata', monospace;
-    --font-preview: 'Inconsolata', monospace;
-    
-    /** transitions **/
-    --transition-speed: .6s;
-    --transition-delay: .25s;
-    
-}
-
+@import url(fontawesome.css);
+@import url(root.css);
 
 /******* General *******/
 
 html {
-    background-color: var(--nav-bg-light);
+    background-color: var(--background);
+}
+
+body {
+    margin: 0;
 }
 
 /******* Header *******/
@@ -39,7 +25,7 @@ header h1 {
     text-align: left;
     font-size: 80px;
     font-family: var(--font-title);
-    
+    color: var(--text);
 }
 
 header p {
@@ -47,7 +33,7 @@ header p {
     font-family: var(--font-body);
     max-width: 600px;
     text-align: justify;
-    
+    color: var(--text);
 }
 
 @media screen and (min-width: 501px) and (max-width: 1000px) {
@@ -90,14 +76,13 @@ header p {
 
 .topnav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: var(--nav-bg);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     z-index: 1;
+    width: 100%;
 }
 
 .topnav li {
@@ -111,7 +96,7 @@ header p {
     transition-delay: var(--transtion-delay);
     
     display: block;
-    color: var(--nav-bg-light);
+    color: var(--background);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -130,7 +115,7 @@ header p {
     font-weight: bold;
     border: 4px solid var(--nav-bg);
     color: var(--nav-bg);
-    background-color: var(--nav-bg-light);
+    background-color: var(--background);
 }
 
 .topnav #icon {
@@ -138,14 +123,13 @@ header p {
 }
 
 .topnav .active a {
-    background-color: var(--nav-bg-light);
-    color: var(--nav-bg);
+    background-color: var(---background);
     border-radius: 25px;
 }
 
 /** responsive styling for phones **/
 
-@media screen and (max-width: 600px) {   
+@media screen and (max-width: 620px) {   
     .topnav li {
         float: none;
         display: none;
@@ -167,13 +151,13 @@ header p {
     
     .topnav #icon a:hover {
         transition: none;
-        color: var(--nav-bg-light);
+        color: var(--background);
         background-color: var(--nav-bg);
     }
     
     .topnav .active a {
-        background-color: var(--nav-bg-light);
-        color: var(--nav-bg);
+        background-color: var(--nav-bg);
+        color: var(--background);
         border-radius: 0px;
     }
 	
@@ -181,71 +165,16 @@ header p {
 	.topnav--dropped li {
         display: block;
 	}
-
 }
-
 
 /******** Main ********/
 
-main {
-    display:flex;
-    flex-wrap: wrap;
-    max-width: 100%;
+/******** Footer ********/
+
+footer { 
+    height: 150px;
 }
 
-main a {
-    max-width: 300px;
-    margin: auto;
-    height: auto;
-    position: relative;
-}
-
-main a img {
-    opacity: .45;
-    width: 100%;
-    
-    /** transition **/
-    transition: var(--transition-speed);
-    transition-delay: var(--transtion-delay);
-}
-
-main a:hover img {
-    opacity:1;
-    
-    /** transition **/
-    transition: var(--transition-speed);
-    transition-delay: var(--transtion-delay);
-}
-
-main a .label {
-    /* position */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    
-    /* appearance */
-    background-color: var(--nav-bg);
-    color: var(--background);
-    font-family: var(--font-preview);
-    font-size: 16px;
-    padding: 6px 10px;
-    
-    /** transition **/
-    transition: var(--transition-speed);
-    transition-delay: var(--transtion-delay);
-    
-    opacity: 0;
-}
-
-main a:hover .label {
-    /** transition **/
-    transition: var(--transition-speed);
-    transition-delay: var(--transtion-delay);
-    
-    opacity:1;
-}
 
 
 

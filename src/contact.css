@@ -1,0 +1,51 @@
+@import url(main.css);
+
+main {
+    padding-top: 25px;
+    margin: auto;
+}
+
+main ul {
+    width: 550px;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+main li {
+    width: 100%;
+    background: var(--nav-bg);
+    font-size: 5em;
+    padding: 20px;
+}
+
+main a:hover {
+    color: var(--highlight);
+}
+
+main a {
+    width: 100%;
+    color: var(--background);
+}
+
+main p {
+    font-family: var(--font-body);
+    display: inline-block;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+}
+
+/** responsive styling for phones **/
+
+@media screen and (max-width: 620px) {   
+    main li {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 420px) {   
+    main li {
+        font-size: 2em;
+    }
+}
