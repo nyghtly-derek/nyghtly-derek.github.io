@@ -50,16 +50,18 @@ main a .label {
     padding: 6px 6px;
 }
 
-@media screen and (max-width: 750px) {
+/*** responsive for tablet ***/
+
+@media screen and (min-width: 600px) and (max-width:1024px) {
     main div {
         margin: auto; 
         margin-bottom: 100px;
     }
 }
 
-/*** Fancy Transitions (not for smartphones) ***/
+/*** Fancy Hover (not for smartphones) ***/
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 599px) {
     main a img {
         opacity: .45;
         
