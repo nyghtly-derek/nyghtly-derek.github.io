@@ -55,21 +55,21 @@ main a .label {
 
 @media only screen and (max-width: 1024px) {
     main div {
-        max-width: 600px;
+        max-width: 1024px;
         margin-bottom: 100px;
     }
 }
 
 @media only screen and (max-width: 780px) {
     main div {
-        width: 100%;
+        max-width: 780px;
         margin-bottom: 100px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     main div {
-        width: 100%;
+        width: 600px;
         margin-bottom: 100px;
     }
 }
