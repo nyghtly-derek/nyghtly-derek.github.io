@@ -69,6 +69,10 @@ main a .label {
     main .advent-of-py {
         max-width: 80%;
     }
+
+    main a .label {
+        font-size: 3em;
+    }
 }
 
 
