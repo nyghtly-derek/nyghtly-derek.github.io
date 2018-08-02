@@ -54,8 +54,25 @@ main a .label {
 
 @media only screen and (max-width: 1024px) {
     main div {
-        margin: auto; 
         margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    main div {
+        max-width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    main div {
+        margin-bottom: 700px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main div {
+        margin-bottom: 500px;
     }
 }
 
