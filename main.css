@@ -40,8 +40,7 @@ header p {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     header {
-        min-height: 600px;
-        max-width: 400px;
+        padding: 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -51,8 +50,8 @@ header p {
     }
     
     header p {
-        text-align: justify;
-        font-size: 3em;
+        text-align: left;
+        font-size: 2.5em;
     }
 }
 
@@ -60,19 +59,18 @@ header p {
 
 @media only screen and (max-width: 767px) {
     header {
-        min-height: 400px;
-        max-width: 270px;
+        padding: 10px;
         margin-left: auto;
         margin-right: auto;
     }
     
     header h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
     
     header p {
-        text-align: justify;
-        font-size: 2em;
+        text-align: left;
+        font-size: 2.5em;
     }
 }
 
@@ -148,7 +146,7 @@ header p {
     
     .topnav li a {
         border: 0px;
-        font-size: 2em;
+        font-size: 3em;
     }
     
     .topnav li a:hover {
