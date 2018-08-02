@@ -47,12 +47,12 @@ header p {
     }
     
     header h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
     
     header p {
         text-align: justify;
-        font-size: 2em;
+        font-size: 3em;
     }
 }
 
@@ -67,12 +67,12 @@ header p {
     }
     
     header h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
     
     header p {
         text-align: justify;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
@@ -108,6 +108,7 @@ header p {
 	font-weight:600;
     border: 4px solid var(--nav-bg);
     border-radius: 10px;
+    font-size: 1em;
 }
 
 .topnav li a:hover {
@@ -147,6 +148,7 @@ header p {
     
     .topnav li a {
         border: 0px;
+        font-size: 2em;
     }
     
     .topnav li a:hover {
