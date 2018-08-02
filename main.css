@@ -23,13 +23,13 @@ header {
 
 header h1 {
     text-align: left;
-    font-size: 80px;
+    font-size: 4em;
     font-family: var(--font-title);
     color: var(--text);
 }
 
 header p {
-    font-size: 40px;  
+    font-size: 2.5em;  
     font-family: var(--font-body);
     max-width: 600px;
     text-align: justify;
@@ -38,7 +38,7 @@ header p {
 
 /*** responsive for tablet ***/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     header {
         min-height: 600px;
         max-width: 400px;
@@ -47,18 +47,18 @@ header p {
     }
     
     header h1 {
-        font-size: 60px;
+        font-size: 3em;
     }
     
     header p {
         text-align: justify;
-        font-size: 30px;
+        font-size: 2em;
     }
 }
 
 /*** responsive for phones ***/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 767px) {
     header {
         min-height: 400px;
         max-width: 270px;
@@ -67,12 +67,12 @@ header p {
     }
     
     header h1 {
-        font-size: 40px;
+        font-size: 2em;
     }
     
     header p {
         text-align: justify;
-        font-size: 20px;
+        font-size: 1.5em;
     }
 }
 
@@ -132,9 +132,9 @@ header p {
     color: var(--nav-bg);
 }
 
-/*** responsive for phones ***/
+/*** responsive for phones/tablets ***/
 
-@media only screen and (min-width: 600px) {  
+@media only screen and (max-width: 1025px) {  
     .topnav li {
         float: none;
         display: none;

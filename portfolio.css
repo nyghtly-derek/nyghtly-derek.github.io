@@ -50,18 +50,18 @@ main a .label {
     padding: 6px 6px;
 }
 
-/*** responsive for tablet ***/
+/*** responsive for phone/tablet ***/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
     main div {
         margin: auto; 
         margin-bottom: 100px;
     }
 }
 
-/*** Fancy Hover (not for smartphones) ***/
+/*** Fancy Hover (not for phones) ***/
 
-@media only screen and (min-width: 600px) {  
+@media only screen and (min-width: 1025px) { 
     main a img {
         opacity: .45;
         
