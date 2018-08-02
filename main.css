@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
-@import url(fontawesome.css);
-@import url(root.css);
+@import url('https://nyghtly.me/fontawesome.css');
+@import url('https://nyghtly.me/froot.css');
 
 /******* General *******/
 
@@ -40,7 +40,7 @@ header p {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     header {
-        padding: 20px;
+        padding: 10px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -146,7 +146,7 @@ header p {
     
     .topnav li a {
         border: 0px;
-        font-size: 4.5em;
+        font-size: 3em;
     }
     
     .topnav li a:hover {
