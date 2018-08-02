@@ -50,27 +50,34 @@ main a .label {
     padding: 6px 6px;
 }
 
-/*** responsive for phone/tablet ***/
-
+/*** responsive for tablet ***/
 
 @media only screen and (max-width: 1024px) {
     main div {
-        max-width: 1024px;
         margin-bottom: 100px;
     }
 }
 
-@media only screen and (max-width: 780px) {
+/*** responsive for phone ***/
+
+@media only screen and (max-width: 767px) {
     main div {
-        max-width: 780px;
         margin-bottom: 100px;
     }
-}
-
-@media only screen and (max-width: 600px) {
-    main div {
-        width: 600px;
-        margin-bottom: 100px;
+    main .breakout {
+        max-width: 100%;
+    }
+    
+    main .project-ug {
+        max-width: 100%;
+    }
+    
+    main .advent-of-py {
+        max-width: 100%;
+    }
+    
+    main .doubletet {
+        max-width: 100%;
     }
 }
 

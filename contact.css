@@ -44,7 +44,7 @@ main .email {
 
 main .email textarea {
     margin: auto;
-    font-size: .4em;
+    font-size: .6em;
     color: var(--background);
 }
 
@@ -65,31 +65,4 @@ main .email button {
 
 main .email button:hover {
     background-color: var(--highlight);
-}
-
-/*** responsive for tablet ***/
-
-@media screen and (min-width: 768px) and (max-width:1024px) {
-    main {
-        width: 460px;
-    }
-    
-    main li {
-        font-size: 3em;
-    }
-
-    main .email textarea {
-        font-size: .50em;
-    }
-}
-/*** responsive for phones ***/
-
-@media only screen and (max-width: 767px) {
-    main li {
-        font-size: 2em;
-    }
-
-    main .email textarea {
-        font-size: .6em;
-    }
 }
