@@ -30,7 +30,7 @@ main a .label {
     color: var(--highlight);
     font-family: var(--font-preview);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
     padding: 6px 6px;
 }
 
@@ -60,6 +60,14 @@ main a .label {
     main div {
         max-width: 100%;
         margin-bottom: 100px;
+    }
+    
+    main .project-ug {
+        max-width: 80%;
+    }
+    
+    main .advent-of-py {
+        max-width: 80%;
     }
 }
 
