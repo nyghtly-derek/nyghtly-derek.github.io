@@ -44,7 +44,7 @@ main .email {
 
 main .email textarea {
     margin: auto;
-    font-size: .6em;
+    font-size: .5em;
     color: var(--background);
 }
 
@@ -57,7 +57,7 @@ main .email button {
     border: none;
     color: var(--nav-bg);
     padding: 8px;  
-    font-size: 16px;
+    font-size: .6em;
     font-weight: bold;
     font-family: var(--font-body);
     cursor: pointer;

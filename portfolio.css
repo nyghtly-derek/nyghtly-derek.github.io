@@ -13,22 +13,6 @@ main div {
     position: relative;
 }
 
-main .breakout {
-    max-width: 300px;
-}
-
-main .project-ug {
-    max-width: 425px;
-}
-
-main .advent-of-py {
-    max-width: 425px;
-}
-
-main .doubletet {
-    max-width: 350px;
-}
-
 main a img {
     width: 100%;
 }
@@ -52,6 +36,24 @@ main a .label {
 
 /*** responsive for tablet ***/
 
+@media only screen and (min-width: 1025px) {
+    main .breakout {
+        max-width: 300px;
+    }
+    
+    main .project-ug {
+        max-width: 425px;
+    }
+    
+    main .advent-of-py {
+        max-width: 425px;
+    }
+    
+    main .doubletet {
+        max-width: 350px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     main div {
         margin-bottom: 100px;
@@ -62,22 +64,8 @@ main a .label {
 
 @media only screen and (max-width: 767px) {
     main div {
+        max-width: 100%;
         margin-bottom: 100px;
-    }
-    main .breakout {
-        max-width: 100%;
-    }
-    
-    main .project-ug {
-        max-width: 100%;
-    }
-    
-    main .advent-of-py {
-        max-width: 100%;
-    }
-    
-    main .doubletet {
-        max-width: 100%;
     }
 }
 
