@@ -52,27 +52,25 @@ main a .label {
 
 /*** responsive for phone/tablet ***/
 
-@media only screen and (max-width: 1024px) {
-    main div {
-        margin-bottom: 100px;
-    }
-}
 
 @media only screen and (max-width: 1024px) {
     main div {
-        max-width: 1000px;
+        max-width: 600px;
+        margin-bottom: 100px;
     }
 }
 
 @media only screen and (max-width: 780px) {
     main div {
-        margin-bottom: 700px;
+        width: 100%;
+        margin-bottom: 100px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     main div {
-        margin-bottom: 500px;
+        width: 100%;
+        margin-bottom: 100px;
     }
 }
 
