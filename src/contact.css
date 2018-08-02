@@ -2,21 +2,22 @@
 
 main {
     padding-top: 25px;
+    width: 600px;
     margin: auto;
 }
 
 main ul {
-    width: 550px;
+    width: 100%;
     list-style-type: none;
     margin: auto;
     padding: 0;
 }
 
 main li {
-    width: 100%;
     background: var(--nav-bg);
     font-size: 5em;
     padding: 20px;
+    padding-right: 0;
 }
 
 main a:hover {
@@ -36,16 +37,59 @@ main p {
     margin: 0;
 }
 
+main .email {
+    display: inline-block;
+    text-align: center;
+}
+
+main .email textarea {
+    margin: auto;
+    font-size: .4em;
+    color: var(--background);
+}
+
+main .email--hide {
+    display: none;
+}
+
+main .email button {
+    background-color: var(--background);
+    border: none;
+    color: var(--nav-bg);
+    padding: 8px;  
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--font-body);
+    cursor: pointer;
+}
+
+main .email button:hover {
+    background-color: var(--highlight);
+}
+
 /** responsive styling for phones **/
 
-@media screen and (max-width: 620px) {   
+@media screen and (max-width: 620px) {  
+    main {
+        width: 460px;
+    }
+    
     main li {
         font-size: 3em;
+    }
+
+    main .email textarea {
+        font-size: .50em;
     }
 }
 
 @media screen and (max-width: 420px) {   
+    
     main li {
         font-size: 2em;
+    }
+
+    main .email textarea {
+        font-size: .6em;
     }
 }

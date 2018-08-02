@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Derek's coding portfolio</title>
+        <title>nyghtly.me / Contact</title>
         <link rel="stylesheet" href="contact.css">
         <!-- import Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
@@ -31,6 +31,17 @@
     <main>
         <ul>
             <li>
+                <a href="javascript:void(0);" onclick="showEmail()">
+                    <i class="fas fa-envelope">
+                        <p> // Email</p>
+                    </i>
+                </a>
+                <div id="js-email-div" class="email email--hide">
+                    <textarea id="js-email" rows="1" cols="20"></textarea>
+                    <button onclick="copyEmail()">Copy</button>
+                </div>
+            </li>
+            <li>
                 <a href="https://github.com/nyghtly-derek">
                     <i class="fab fa-github">
                         <p> // GitHub</p>
@@ -38,15 +49,16 @@
                 </a>
             </li>
             <li>
-                <a href="https://github.com/nyghtly-derek">
-                    <i class="fas fa-envelope">
-                        <p> // Email</p>
+                <a href="https://www.instagram.com/nyghtly.derek/">
+                    <i class="fab fa-instagram">
+                        <p> // Insta</p>
                     </i> 
                 </a>
             </li>
         </ul>
     </main>
     <!-- javaScript -->
+    <script src="email.js"></script>
     <script src="topnav.js"></script>
 </html>
 

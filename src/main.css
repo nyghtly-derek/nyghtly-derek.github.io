@@ -123,8 +123,9 @@ header p {
 }
 
 .topnav .active a {
-    background-color: var(---background);
+    background-color: var(--background);
     border-radius: 25px;
+    color: var(--nav-bg);
 }
 
 /** responsive styling for phones **/

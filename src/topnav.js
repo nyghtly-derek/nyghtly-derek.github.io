@@ -1,7 +1,4 @@
-
-
 var topnav = document.getElementById("js-topnav");
-
 
 function dropTopnav() {
     if (!topnav.classList.contains("topnav--dropped")) {
