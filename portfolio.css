@@ -34,7 +34,7 @@ main a .label {
     padding: 6px 6px;
 }
 
-/*** responsive for tablet ***/
+/*** responsive for desktops ***/
 
 @media only screen and (min-width: 1025px) {
     main .breakout {
@@ -54,20 +54,15 @@ main a .label {
     }
 }
 
+/*** responsive for phone/tablet ***/
+
 @media only screen and (max-width: 1024px) {
-    main div {
-        margin-bottom: 100px;
-    }
-}
-
-/*** responsive for phone ***/
-
-@media only screen and (max-width: 767px) {
     main div {
         max-width: 100%;
         margin-bottom: 100px;
     }
 }
+
 
 /*** Fancy Hover (not for phones) ***/
 
