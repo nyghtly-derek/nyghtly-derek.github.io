@@ -52,7 +52,7 @@ main a .label {
 
 /*** responsive for tablet ***/
 
-@media screen and (min-width: 600px) and (max-width:1024px) {
+@media only screen and (min-width: 768px) {
     main div {
         margin: auto; 
         margin-bottom: 100px;
@@ -61,7 +61,7 @@ main a .label {
 
 /*** Fancy Hover (not for smartphones) ***/
 
-@media screen and (max-width: 599px) {
+@media only screen and (min-width: 600px) {  
     main a img {
         opacity: .45;
         
