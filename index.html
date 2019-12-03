@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>nyghtly.me / Home</title>
+        <meta http-equiv="Content-Security-Policy" 
+            content="default-src https;
+                    script-src 'self';
+                    style-src 'self' https://use.fontawesome.com https://fonts.googleapis.com;
+                    img-src 'self';
+                    font-src 'self' https://use.fontawesome.com https://fonts.gstatic.com;
+                    frame-ancestors 'self'">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+        <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+        <meta http-equiv="Strict-Transport-Security" content="max-age=63072000">
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="portfolio.css">
-        <!-- import Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
               integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
               crossorigin="anonymous">
     </head>
     <nav class="topnav" id="js-topnav">
         <li class="icon" id="icon">
-            <a href="javascript:void(0);" onclick="dropTopnav()">
+            <a id="js-topnav-activator">
                 <i class="fas fa-bars"></i>
             </a>
         </li>

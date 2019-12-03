@@ -1,6 +1,9 @@
 var topnav = document.getElementById("js-topnav");
+var topnavActivator = document.getElementById("js-topnav-activator");
 
-function dropTopnav() {
+topnavActivator.onclick = dropTopnav;
+
+function dropTopnav(){
     if (!topnav.classList.contains("topnav--dropped")) {
         topnav.classList.add("topnav--dropped");
     } 
@@ -8,5 +11,3 @@ function dropTopnav() {
         topnav.classList.remove("topnav--dropped");
     }
 }
-
-
