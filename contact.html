@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nyghtly.me / Contact</title>
+        <meta http-equiv="Content-Security-Policy" 
+            content="default-src 'none';
+                    script-src 'self';
+                    style-src 'self' https://use.fontawesome.com https://fonts.googleapis.com;
+                    img-src 'self';
+                    font-src 'self' https://use.fontawesome.com https://fonts.gstatic.com;
+                    frame-ancestors 'self';
+                    form-action 'self';
+                    base-uri 'self';
+                    strict-dynamic">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+        <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+        <meta http-equiv="Strict-Transport-Security" content="max-age=63072000">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+              crossorigin="anonymous">
+    </head>
+    <nav class="topnav" id="js-topnav">
+        <li class="icon" id="icon">
+            <a id="js-topnav-activator">
+                <i class="fas fa-bars"></i>
+            </a>
+        </li>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="portfolio.html">View Portfolio</a>
+        </li>
+        <li>
+            <a href="resume.html">View Resume</a>
+        </li>
+        <li class="active">
+            <a href="contact.html">Contact Me</a>
+        </li>
+    </nav>
+    <main>
+        <ul>
+            <li>
+                <a id="js-show-email">
+                    <i class="fas fa-envelope">
+                        <p> // Email</p>
+                    </i>
+                </a>
+                <div id="js-email-div" class="email email--hide">
+                    <textarea id="js-email" rows="1" cols="20"></textarea>
+                    <button id="js-copy-email">Copy</button>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/dblanken/">
+                    <i class="fab fa-linkedin">
+                        <p> // LinkedIn</p>
+                    </i> 
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/nyghtly-derek">
+                    <i class="fab fa-github">
+                        <p> // GitHub</p>
+                    </i> 
+                </a>
+            </li>
+        </ul>
+    </main>
+    <!-- javaScript -->
+    <script src="email.js"></script>
+    <script src="topnav.js"></script>
+</html>
+
+
