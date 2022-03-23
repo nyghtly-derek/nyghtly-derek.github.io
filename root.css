@@ -1,15 +1,15 @@
 :root {
     /** colors **/
-    --background: #7FC9E0;
-    --nav-bg: #004A61;
-    --text: #100A0B;
+    --background-color: #82cee6;
+    --foreground-color: #004155;
+    --text-color: black;
     --highlight: white;
-    
+
     /** fonts **/
     --font-title: 'Merriweather', serif;
     --font-body: 'Inconsolata', monospace;
     --font-preview: 'Inconsolata', monospace;
-    
+
     /** transitions **/
     --transition-speed: .6s;
     --transition-delay: .25s;

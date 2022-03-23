@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>nyghtly.me / Home</title>
-        <meta http-equiv="Content-Security-Policy" 
-            content="default-src 'none';
+<html lang="en">
+
+<head>
+  <title>nyghtly.net / Home</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none';
                     script-src 'self';
                     style-src 'self' https://use.fontawesome.com https://fonts.googleapis.com;
                     img-src 'self';
@@ -12,74 +12,47 @@
                     form-action 'self';
                     base-uri 'self';
                     strict-dynamic">
-        <meta http-equiv="X-Content-Type-Options" content="nosniff">
-        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-        <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-        <meta http-equiv="Strict-Transport-Security" content="max-age=63072000">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="portfolio.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
-              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
-              crossorigin="anonymous">
-    </head>
-    <nav class="topnav" id="js-topnav">
-        <li class="icon" id="icon">
-            <a id="js-topnav-activator">
-                <i class="fas fa-bars"></i>
-            </a>
-        </li>
-        <li class="active">
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="portfolio.html">View Portfolio</a>
-        </li>
-        <li>
-            <a href="resume.html">View Resume</a>
-        </li>
-        <li>
-            <a href="contact.html">Contact Me</a>
-        </li>
-    </nav>
-    <header>
-        <h1>Hi there!</h1>
-        <p> 
-            Welcome to my portfolio. <br><br>
-            My name is Derek, also known as <strong><code>nyghtly</code></strong>, a software engineer who loves to code. <br><br>
-            
-                
-            <!-- <br><br>I've got a passion for learning, and so I'm constanstly challenging myself by building projects using new languages and tools. This website is just one example. It's responsive and also has fun animations. Try viewing it on your phone, tablet or computer--it works everywhere. -->
-            
-            Scroll down to see some of the cool stuff that I've made... <br><br>
-        </p>
-    </header>
-    <main>
-        <div class="breakout">
-            <a href="https://github.com/nyghtly-derek/Breakout">
-                <img src="data/breakout-linux2.png" alt="breakout">
-                <p class="label">Breakout / Java</p>
-            </a>
-        </div>
-        <div class="project-ug">
-            <a href="https://github.com/nyghtly-derek/project-ug">
-                <img src="data/project-ug3.png" alt="project-ug">
-                <p class="label">Project Ugly Gob / C++</p>
-            </a>
-        </div>
-        <div class="advent-of-py">
-            <a href="https://github.com/nyghtly-derek/advent-of-py">
-                <img src="data/advent-of-py.png" alt="advent-of-py">
-                <p class="label">Advent of Py / Python</p>
-            </a>
-        </div>
-        <div class="doubletet">
-            <a href="https://github.com/Derek-Robert-Games/doubletet">
-                <img src="data/doubletet.png" alt="doubletet">
-                <p class="label">Doubletet / Rust</p>
-            </a>
-        </div>
-    </main>
-    <footer></footer>
-    <!-- javaScript -->
-    <script src="topnav.js"></script>
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=63072000">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<a id="skip" href="#intro">Skip to Main Content</a>
+<nav class="topnav" id="js-topnav">
+  <ul>
+    <li class="icon" id="icon">
+      <a id="js-topnav-activator">
+        <i class="fas fa-bars"></i>
+      </a>
+    </li>
+    <li class="active">
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="portfolio.html">View Portfolio</a>
+    </li>
+    <li>
+      <a href="resume.html">View Resume</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact Me</a>
+    </li>
+  </ul>
+</nav>
+<main id="intro" tabindex="-1">
+  <h1>Hello!</h1>
+  <p>My name is Derek, also known as <strong><code>nyghtly</code></strong>, a software engineer who loves to code.</p>
+  <!-- <p>I've got a passion for learning, and so I'm constanstly challenging myself by building projects using new languages
+    and tools. This website is just one example. It's responsive and also has fun animations. Try viewing it on your
+    phone, tablet or computer--it works everywhere.</p> -->
+  <p>Check out some of the <a href="portfolio.html">cool stuff</a> that I've made.</p>
+</main>
+<footer></footer>
+<!-- javaScript -->
+<script src="topnav.js"></script>
+
 </html>

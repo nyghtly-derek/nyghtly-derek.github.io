@@ -14,10 +14,9 @@ main ul {
 }
 
 main li {
-    background: var(--nav-bg);
+    background: var(--foreground-color);
     font-size: 5em;
     padding: 20px;
-    padding-right: 0;
 }
 
 main a:hover {
@@ -26,11 +25,12 @@ main a:hover {
 
 main a {
     width: 100%;
-    color: var(--background);
+    color: var(--background-color);
 }
 
+main h1,
 main p {
-    font-family: var(--font-body);
+    font-size: 1em;
     display: inline-block;
     font-weight: bold;
     font-style: normal;
@@ -38,14 +38,12 @@ main p {
 }
 
 main .email {
-    display: inline-block;
     text-align: center;
 }
 
 main .email textarea {
     margin: auto;
-    font-size: .5em;
-    color: var(--background);
+    font-size: .6em;
 }
 
 main .email--hide {
@@ -53,10 +51,10 @@ main .email--hide {
 }
 
 main .email button {
-    background-color: var(--background);
+    background-color: var(--background-color);
     border: none;
-    color: var(--nav-bg);
-    padding: 8px;  
+    color: var(--foreground-color);
+    padding: 8px;
     font-size: .6em;
     font-weight: bold;
     font-family: var(--font-body);

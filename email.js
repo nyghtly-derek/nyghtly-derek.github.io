@@ -8,20 +8,12 @@ var copyEmailActivator = document.getElementById("js-copy-email");
 showEmailActivator.onclick = showEmail;
 copyEmailActivator.onclick = copyEmail;
 
-function showEmail() {
-    if (toggle) {
-        emailText.innerHTML = " derek@nyghtly.net";
-        emailDiv.classList.remove("email--hide");
-        toggle = false;
-    }
-    else {
-        emailText.innerHTML = "";
-        emailDiv.classList.add("email--hide");
-        toggle = true;
-    }
+function showEmail () {
+    emailText.innerHTML = "derek@nyghtly.net";
+    emailDiv.classList.remove("email--hide");
 }
 
-function copyEmail() {
+function copyEmail () {
     emailText.select();
     document.execCommand("copy");
 }
