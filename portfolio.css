@@ -7,7 +7,7 @@ main {
     flex-wrap: wrap;
 }
 
-main div {
+main article {
     max-width: 300px;
     margin: auto;
     position: relative;
@@ -17,21 +17,15 @@ main a img {
     width: 100%;
 }
 
-main a .label {
-    /* position */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    
-    /* appearance */
-    background-color: var(--nav-bg);
-    color: var(--highlight);
-    font-family: var(--font-preview);
-    font-weight: bold;
-    font-size: 1em;
-    padding: 6px 6px;
+main article a .label {
+    font-size: 2em;
+}
+
+main a:link,
+main a:visited,
+main a:hover,
+main a:active {
+    text-decoration: none;
 }
 
 /*** responsive for desktops ***/
@@ -40,15 +34,15 @@ main a .label {
     main .breakout {
         max-width: 300px;
     }
-    
-    main .project-ug {
+
+    main #project-ug {
         max-width: 425px;
     }
-    
-    main .advent-of-py {
+
+    main #advent-of-py {
         max-width: 375px;
     }
-    
+
     main .doubletet {
         max-width: 350px;
     }
@@ -57,16 +51,16 @@ main a .label {
 /*** responsive for phone/tablet ***/
 
 @media only screen and (max-width: 1024px) {
-    main div {
+    main article {
         max-width: 100%;
         margin-bottom: 100px;
     }
-    
-    main .project-ug {
+
+    main #project-ug {
         max-width: 80%;
     }
-    
-    main .advent-of-py {
+
+    main #advent-of-py {
         max-width: 80%;
     }
 
@@ -78,37 +72,27 @@ main a .label {
 
 /*** Fancy Hover (not for phones) ***/
 
-@media only screen and (min-width: 1025px) { 
+@media only screen and (min-width: 1025px) {
     main a img {
         opacity: .45;
-        
-        /** transition **/
         transition: var(--transition-speed);
         transition-delay: var(--transtion-delay);
     }
-    
-    main a:hover img {
-        opacity:1;
-        
-        /** transition **/
-        transition: var(--transition-speed);
-        transition-delay: var(--transtion-delay);
-    }
-    
-    main a .label {
-        opacity: 0;
 
-        /** transition **/
+    main article .label {
+        opacity: 0;
         transition: var(--transition-speed);
         transition-delay: var(--transtion-delay);
     }
-    
-    main a:hover .label {
-        opacity:1;
-        
-        /** transition **/
+
+    main article:hover img,
+    main article:hover .label,
+    main article:focus img,
+    main a:focus img,
+    main a:focus .label,
+    main article:focus .label {
+        opacity: 1;
         transition: var(--transition-speed);
         transition-delay: var(--transtion-delay);
     }
-    
 }

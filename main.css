@@ -5,182 +5,133 @@
 /******* General *******/
 
 html {
-    background-color: var(--background);
+    background-color: var(--background-color);
 }
 
 body {
     margin: 0;
 }
 
-/******* Header *******/
-    
-header {
-    height: 100vh;
-    min-height: 800px;
-    max-width: 600px;
-    margin: auto;
+/***** Skip Link *****/
+
+#skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
-header h1 {
-    text-align: left;
-    font-size: 4em;
-    font-family: var(--font-title);
-    color: var(--text);
-}
-
-header p {
-    font-size: 2.5em;  
-    font-family: var(--font-body);
-    max-width: 600px;
-    text-align: justify;
-    color: var(--text);
-}
-
-/*** responsive for tablet ***/
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    header {
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    header h1 {
-        font-size: 4em;
-    }
-    
-    header p {
-        text-align: left;
-        font-size: 2.5em;
-    }
-}
-
-/*** responsive for phones ***/
-
-@media only screen and (max-width: 767px) {
-    header {
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    header h1 {
-        font-size: 4em;
-    }
-    
-    header p {
-        text-align: left;
-        font-size: 2.5em;
-    }
+#skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
 }
 
 /******* Top Nav *******/
 
-.topnav {
-    list-style-type: none;
+nav {
     overflow: hidden;
-    background-color: var(--nav-bg);
-    position: -webkit-sticky; /* Safari */
+    background-color: var(--foreground-color);
     position: sticky;
     top: 0;
     z-index: 1;
     width: 100%;
 }
 
-.topnav li {
+nav li {
+    list-style: none;
     float: left;
-    border: 4px solid var(--nav-bg);
+    border: 4px solid var(--foreground-color);
 }
 
-.topnav li a {
-    /** transition **/
+nav li a {
     transition: var(--transition-speed);
     transition-delay: var(--transtion-delay);
-    
+
     display: block;
-    color: var(--background);
+    color: var(--background-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family:var(--font-title);
-	font-weight:600;
-    border: 4px solid var(--nav-bg);
+    font-weight: bold;
+    border: 4px solid var(--foreground-color);
     border-radius: 10px;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
-.topnav li a:hover {
-    /** transition **/
+nav li a:hover {
     transition: var(--transition-speed);
     transition-delay: var(--transtion-delay);
-    
+
     border-radius: 25px;
     font-weight: bold;
-    border: 4px solid var(--nav-bg);
-    color: var(--nav-bg);
-    background-color: var(--background);
+    border: 4px solid var(--foreground-color);
+    color: var(--foreground-color);
+    background-color: var(--background-color);
 }
 
-.topnav #icon {
+nav #icon {
     display: none;
 }
 
-.topnav .active a {
-    background-color: var(--background);
+nav .active a {
+    background-color: var(--background-color);
     border-radius: 25px;
-    color: var(--nav-bg);
+    color: var(--foreground-color);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
 }
 
 /*** responsive for phones/tablets ***/
 
-@media only screen and (max-width: 1025px) {  
-    .topnav li {
+@media only screen and (max-width: 1025px) {
+    nav li {
         float: none;
         display: none;
         border: 0px;
-	}
-    
-	.topnav #icon {    
+    }
+
+    nav #icon {
         display: block;
-	}
-    
-    .topnav li a {
+    }
+
+    nav li a {
         border: 0px;
         font-size: 3em;
     }
-    
-    .topnav li a:hover {
+
+    nav li a:hover {
         border-radius: 0px;
         border: none;
     }
-    
-    .topnav #icon a:hover {
+
+    nav #icon a:hover {
         transition: none;
-        color: var(--background);
-        background-color: var(--nav-bg);
+        color: var(--background-color);
+        background-color: var(--foreground-color);
     }
-    
-    .topnav .active a {
-        background-color: var(--nav-bg);
-        color: var(--background);
+
+    nav .active a {
+        background-color: var(--foreground-color);
+        color: var(--background-color);
         border-radius: 0px;
     }
-	
+
     /* added when user clicks on icon via dropTopnav function in script.js */
-	.topnav--dropped li {
+    .topnav--dropped li {
         display: block;
-	}
+    }
 }
 
 /******** Main ********/
 
 /******** Footer ********/
 
-footer { 
+footer {
     height: 150px;
 }
-
-
-
-
-
