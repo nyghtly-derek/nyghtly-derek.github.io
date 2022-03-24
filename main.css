@@ -76,7 +76,7 @@ nav #icon {
     display: none;
 }
 
-nav .active a {
+nav [aria-current=page] {
     background-color: var(--background-color);
     border-radius: 25px;
     color: var(--foreground-color);
@@ -116,7 +116,7 @@ nav ul {
         background-color: var(--foreground-color);
     }
 
-    nav .active a {
+    nav [aria-current=page] {
         background-color: var(--foreground-color);
         color: var(--background-color);
         border-radius: 0px;
